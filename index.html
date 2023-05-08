@@ -4,11 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlazamos un archivo de estilo externos a nuestro body -->
+    <link rel="stylesheet" href="./css/index.css">
     <title>Clase 02</title>
 </head>
 <body>
+    <nav>
+        <a href="./pages/productos.html">Productos</a>
+    </nav>
+    
+    <main>
     <h1>
-        Titulo de Nivel 1
+        Proyecto 02 - Listas / Formularios / Tablas / CSS
     </h1>
+    <hr>
+    <!-- Lista en Html -->
+    <!-- Listas deordenadas -->
+    <h2>
+        Comprar del super
+    </h2>
+
+    <ul>
+        <li>Café</li>
+        <li>Azúcar</li>
+        <li>Leche</li>
+    </ul>
+<hr>
+        <!--Listas Ordenadas  -->
+    <ol>
+        <li>Lavar el auto</li>
+        <li>Salir de paseo</li>
+        <li>Cargar combustible</li>
+    </ol>
+<hr>
+    <!-- Listas de definición -->
+    <dl>
+        <dt>Argentina</dt>
+        <dd>
+            Es un país con 50 millones de habitantes.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quasi ipsam consequuntur. Incidunt, amet corrupti? Nemo, in libero molestiae quidem, aut reprehenderit dolores quod sit earum maxime expedita repellendus natus.
+        </dd>
+        <dt>Brasil</dt>
+        <dd>Es un país con 300 millones de habitantes... Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, culpa minus! Ex nemo maxime incidunt tempora accusamus a blanditiis nostrum totam dolorum magnam, atque perspiciatis consectetur. Earum aperiam officiis unde.</dd>
+    </dl>
+
+    <dl>
+        <dt>Argentina</dt>
+        <dd>
+            Es un país con 50 millones de habitantes.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quasi ipsam consequuntur. Incidunt, amet corrupti? Nemo, in libero molestiae quidem, aut reprehenderit dolores quod sit earum maxime expedita repellendus natus.
+        </dd>
+        <dt>Brasil</dt>
+        <dd>Es un país con 300 millones de habitantes... Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, culpa minus! Ex nemo maxime incidunt tempora accusamus a blanditiis nostrum totam dolorum magnam, atque perspiciatis consectetur. Earum aperiam officiis unde.</dd>
+    </dl>
+
+    <dl>
+        <dt>Argentina</dt>
+        <dd>
+            Es un país con 50 millones de habitantes.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quasi ipsam consequuntur. Incidunt, amet corrupti? Nemo, in libero molestiae quidem, aut reprehenderit dolores quod sit earum maxime expedita repellendus natus.
+        </dd>
+        <dt>Brasil</dt>
+        <dd>Es un país con 300 millones de habitantes... Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, culpa minus! Ex nemo maxime incidunt tempora accusamus a blanditiis nostrum totam dolorum magnam, atque perspiciatis consectetur. Earum aperiam officiis unde.</dd>
+    </dl>
+
+   <!--  Formularios -->
+   <hr>
+   <h2>Formularios</h2>
+   <hr>
+
+<!-- <form action="/datos" method="post"> -->
+<form id="formulario">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" minlength="4" maxlength="30">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autofocus>
+    <br>
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" min="10" max="100">
+    <br>
+    <label for="fecha">Fecha</label>
+    <input type="date" min="1950-01-01" max="2023-05-30" class="input formulario">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
+    <br>
+    <label for="password">Repita el Password:</label>
+    <input type="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
+    <br>
+    <label for="provincia">Provincia</label>
+    <select name="provincia" id="provincia">
+        <optgroup>
+            <option value="CABA">CABA</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="genero">Género</label>
+    <div>
+        <input type="radio" name="genero" value="femenino"> Femenino 
+        <input type="radio" name="genero" value="masculino"> Masculino
+        <input type="radio" name="genero" value="otro"> Otro
+    </div>
+    <br>
+    <label for="aceptar">Acepto los términos del envío</label>
+    <input type="checkbox" name="aceptar" value="Acepto">
+    <br>
+    <label for="comentario">Comentario</label>
+    <br>
+    <textarea name="comentario" id="comentario" cols="25" rows="10"></textarea>
+    <div>
+        <input type="submit" value="Enviar Datos">
+    </div>
+
+   </form>
+
+</main>
+
+<footer>
+    <address>
+        <p>
+            Mi dirección 200
+        </p>
+    </address>
+</footer>
+
 </body>
 </html>
